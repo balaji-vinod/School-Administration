@@ -1,0 +1,9 @@
+<table>
+  <tr *ngFor="let timeTable of timeTableTo">
+    <td>{{timeTable.classRoom.standard}}</td>
+    <td>{{timeTable.classRoom.section}}</td>
+    <td>{{timeTable.period.periodName}}</td>
+    <td>{{timeTable.period.startTime}}</td>
+    <td>{{timeTable.period.endTime}}</td>
+  </tr>
+</table>

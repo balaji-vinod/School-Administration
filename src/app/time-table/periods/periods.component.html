@@ -1,4 +1,13 @@
-<table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+        <th>Standard</th>
+        <th>Section</th>
+        <th>Period</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+    </tr>
+  </thead>
   <tr *ngFor="let timeTable of timeTableTo">
     <td>{{timeTable.classRoom.standard}}</td>
     <td>{{timeTable.classRoom.section}}</td>

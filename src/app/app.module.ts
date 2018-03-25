@@ -11,15 +11,18 @@ import { HeaderComponent } from './time-table/header/header.component';
 import { PeriodsComponent } from './time-table/periods/periods.component';
 import { TimeTableService } from './time-table/time-table.service';
 import { HttpModule } from '@angular/http';
+import { AttendanceComponent } from './attendance/attendance.component';
+import { applicaitonRoutes } from './app.route';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimeTableComponent,
     HeaderComponent,
-    PeriodsComponent
+    PeriodsComponent,
+    AttendanceComponent
   ],
-  imports: [
+  imports: [applicaitonRoutes,
     BrowserModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     HttpModule

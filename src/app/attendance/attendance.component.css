@@ -1,0 +1,31 @@
+.student {
+    float: left;
+    margin: 1%;
+    width: 22.5%;
+    border: 1px solid green;
+    background: lightblue;
+}
+
+.student:after{
+    display:block;
+    position:relative;
+}
+
+.student:nth-child(4n-3){
+    margin-left:20px;
+}
+.student:nth-child(4n){  
+ margin-right:0;
+}
+section{
+    margin:0 10px;
+}
+
+img {
+    width: 100px;
+    height:100px; 
+}
+
+.image {
+    margin-right: 5px;
+}

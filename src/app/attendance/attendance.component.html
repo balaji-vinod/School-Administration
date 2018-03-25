@@ -1,0 +1,26 @@
+<section>
+
+  <div class="student" style="display:inline-flex" id="studentdiv{{i}}" *ngFor='let student of studentdataArray;let i = index'>
+    <div class="image">
+      <img [src]="student.imagePath" />
+    </div>
+    <div class="details">
+      <div>
+        <strong>Name :</strong> {{student.name}}</div>
+      <div>
+        <strong>Roll Number :</strong> {{student.rollnumber}}</div>
+      <div style="margin-top: 3px">
+        <input type="radio" name="presentradio{{i}}" (change)="present(i)">
+        <label style="margin-left: 3px">
+          <strong>Present</strong>
+        </label>
+        <input style="margin-left: 3px" type="radio" name="absentradio{{i}}" (change)="absent(i)">
+        <label style="margin-left: 3px">
+          <strong>Absent</strong>
+        </label>
+      </div>
+    </div>
+
+  </div>
+
+</section>

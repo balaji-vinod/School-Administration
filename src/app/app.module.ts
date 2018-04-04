@@ -13,6 +13,8 @@ import { TimeTableService } from './time-table/time-table.service';
 import { HttpModule } from '@angular/http';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { applicaitonRoutes } from './app.route';
+import { MenuComponent } from './menu/menu.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { applicaitonRoutes } from './app.route';
     TimeTableComponent,
     HeaderComponent,
     PeriodsComponent,
-    AttendanceComponent
+    AttendanceComponent,
+    MenuComponent
   ],
   imports: [applicaitonRoutes,
     BrowserModule,

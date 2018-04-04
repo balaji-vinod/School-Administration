@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">School Administration</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item" (click)="changeActive($event)">
+            <a class="nav-link active" [routerLink]="['']" >
+              Home
+            </a>
+          </li>
+          <li class="nav-item" (click)="changeActive($event)">
+            <a class="nav-link" [routerLink]="['/attedance']">
+              Attendance
+            </a>
+          </li>
+      </ul>
+    </div>
+  </nav>

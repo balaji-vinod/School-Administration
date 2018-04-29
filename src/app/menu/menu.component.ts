@@ -13,12 +13,4 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeActive(event) {
-    var navItem = document.getElementsByClassName('nav-link');
-    for (var j = 0; j < navItem.length; j++) {
-      navItem[j].className = navItem[j].className.replace(" active", "");
-    }
-    event.target.className += " active";
-  }
-
 }

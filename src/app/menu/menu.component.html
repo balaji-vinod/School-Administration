@@ -2,13 +2,13 @@
     <a class="navbar-brand" href="#">School Administration</a>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
-          <li class="nav-item" (click)="changeActive($event)">
+          <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
             <a class="nav-link" [routerLink]="['']" >
               Home
             </a>
           </li>
-          <li class="nav-item" (click)="changeActive($event)">
-            <a class="nav-link" [routerLink]="['/attedance']">
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/attedance']" >
               Attendance
             </a>
           </li>

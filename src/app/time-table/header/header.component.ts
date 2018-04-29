@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     var tablinks = document.getElementsByClassName('tablinks');
-    tablinks[new Date().getDay() -1].className += " active";
+    tablinks[0].className += " active";
   }
 
   showPeriods(event, i) {
@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
       tablinks[j].className = tablinks[j].className.replace(" active", "");
     }
     event.target.className += " active";
-    this.timeTableService.getTimeTableTeacher(i, 11).subscribe(
+    this.timeTableService.getTimeTableTeacher(i, 1).subscribe(
       (timeTableTo: TimeTableTo) => (this.timeTableService.onDateChanged.emit(timeTableTo)),
       (error) => alert(error)
     );

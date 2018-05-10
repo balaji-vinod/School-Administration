@@ -14,7 +14,8 @@ export class PeriodsComponent implements OnInit {
   constructor(private timeTableService : TimeTableService) { }
 
   ngOnInit() {
-    this.timeTableService.getTimeTableTeacher(1, 1).subscribe(
+    var date = new Date().getDay();
+    this.timeTableService.getTimeTableTeacher((date  > 0 && date  < 6) ? date : 1, 1).subscribe(
       (timeTableTo: any) => (this.timeTableTo = timeTableTo),
       (error) => alert(error)
     );
